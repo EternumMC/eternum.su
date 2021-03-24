@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "FSMeridian-Bold";
+  src: local("FSMeridian-Bold"),
+    url("../fonts/FSMeridian-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GothicA1-Black";
+  src: local("GothicA1-Black"),
+    url("../fonts/GothicA1-Black.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: #6c6c6c;
+}
+.root {
+  width: 100%;
+  min-height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.05);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.root::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background-image: url("../img/NoiseTexture.png");
+  top: 0;
+  z-index: 3;
+  opacity: .04;
+}
+.circle-1 {
+  width: 524px;
+  height: 364px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../img/circle-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.circle-2 {
+  width: 765px;
+  height: 566px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/circle-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  -webkit-backdrop-filter: blur(250px);
+  backdrop-filter: blur(250px);
+  z-index: 2;
+}

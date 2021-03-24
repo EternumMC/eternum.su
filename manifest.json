@@ -1,0 +1,26 @@
+{
+  "theme_color": "#6C6C6C",
+  "background_color": "#6C6C6C",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Eternum",
+  "short_name": "Eternum",
+  "description": "Minecraft server community",
+  "orientation": "any",
+  "lang": "Russian",
+  "icons": [
+    {
+      "src": "/img/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
