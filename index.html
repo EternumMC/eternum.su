@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Manifest -->
     <link rel="manifest" href="./manifest.json" />
     <!-- Apple Icon -->
@@ -13,26 +13,55 @@
       sizes="256x256"
     />
     <!-- Icon -->
-    <link
-      rel="shortcut icon"
-      href="./img/icon-256x256.png"
-      sizes="256x256"
-    />
+    <link rel="shortcut icon" href="./img/icon-256x256.png" sizes="256x256" />
     <!-- Reset CSS -->
-    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/reset.min.css" />
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="css/style.css" />
+
     <!-- Title -->
     <title>Eternum</title>
-</head>
-<body>
+  </head>
+  <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div class="root" id='root'>
-        <div class="circle-1"></div>
-        <div class="circle-2"></div>
-        <div class="bg"></div>
+    <div class="root" id="root">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="bg"></div>
+      <div class="wrapper">
+        <header class="header">
+          <div class="logo">
+            <div class="logo-img"></div>
+            <div class="logo-text">ETERNUM</div>
+          </div>
+          <div class="discord-icon"></div>
+        </header>
+        <div class="fuulscreen">
+          <section class="body">
+            <div class="circles">
+              <div class="circle blue"></div>
+              <div class="circle yellow"></div>
+              <div class="circle red"></div>
+            </div>
+            <div class="info">
+              <div class="info-header">
+                <div class="info-title">
+                  Сообществво серверов по игре Minecraft
+                </div>
+                <div class="info-text">
+                  Мы создаем большое и адекватное комьюнити, в котором можно
+                  будет прижиться каждому игроку сервера, обычному пользователю
+                  и даже серверу. У нас нет рекламы, мы не сервер, а сообщество
+                  дружелюбных и сплоченных серверов.
+                </div>
+                <a href="#" class="info-btn">Join</a>
+              </div>
+              <div class="info-footer">ETERNUM</div>
+            </div>
+          </section>
+        </div>
+      </div>
     </div>
-    <script src="/js/main.js" ></script>
-</body>
+    <script src="/js/main.js"></script>
+  </body>
 </html>

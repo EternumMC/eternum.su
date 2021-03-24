@@ -27,7 +27,9 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   background: #6c6c6c;
-  color: #F2F2F2;
+  color: #f2f2f2;
+  height: 100%;
+}
 .root {
   width: 100%;
   min-height: 100%;
@@ -48,7 +50,7 @@ body {
   background-image: url("../img/NoiseTexture.png");
   top: 0;
   z-index: 3;
-  opacity: .04;
+  opacity: 0.04;
 }
 .circle-1 {
   width: 524px;
@@ -80,4 +82,148 @@ body {
   -webkit-backdrop-filter: blur(250px);
   backdrop-filter: blur(250px);
   z-index: 2;
+}
+.wrapper {
+  min-height: 100vh;
+  max-width: 1530px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 36px 0;
+  box-sizing: border-box;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.185em;
+  font-family: FS Meridian;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: #f2f2f2;
+}
+.logo-img {
+  width: 56px;
+  height: 32px;
+  background-image: url("../img/Logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.logo-text {
+  margin-left: 5px;
+}
+.discord-icon {
+  width: 25px;
+  height: 29px;
+  background-image: url("../img/DiscordIcon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.body {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.fuulscreen {
+  min-height: calc(100vh - 104px);
+  display: flex;
+  align-items: flex-end;
+}
+.info {
+  max-width: 653px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.info-header {
+  max-width: 470px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 112px;
+}
+.info-footer {
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+  font-family: FS Meridian;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  letter-spacing: 0.185em;
+  transform: translateY(-5px);
+}
+.info-title {
+  font-family: "GothicA1-Black";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.185em;
+}
+.info-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  margin-top: 37px;
+  color: #cecece;
+}
+.info-btn {
+  margin-top: 75px;
+  background: rgba(83, 83, 83, 0.6);
+  border-radius: 20px 0px 20px 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120.69%;
+  letter-spacing: 0.04em;
+  color: #d0d0d0;
+  padding: 9px 42px;
+  box-sizing: border-box;
+  text-decoration: none;
+  align-self: flex-start;
+}
+.circles {
+  position: relative;
+  margin-top: 260px;
+}
+.circle {
+  position: absolute;
+  width: 192px;
+  height: 192px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.blue {
+  background-image: url("../img/circle-blue.png");
+}
+.yellow {
+  background-image: url("../img/circle-yellow.png");
+  transform: translateX(96px);
+}
+.red {
+  background-image: url("../img/circle-red.png");
+  transform: translateX(192px);
+}
+
+@media (max-width: 1550px) {
+  .wrapper {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
 }
