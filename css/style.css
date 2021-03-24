@@ -200,6 +200,24 @@ body {
 .circles {
   position: relative;
   margin-top: 260px;
+  transition: all .2s ease-in-out;
+  
+}
+.circles:hover .yellow{
+    transform: translate(96px, -96px);
+    transition: all .2s ease-in-out;
+}
+.circles:hover .blue{
+    transform: translate(48px, 0);
+    transition: all .2s ease-in-out;
+}
+.circles:hover .red{
+    transform: translate(144px, 0);
+    transition: all .2s ease-in-out;
+}
+.circles:hover {
+    transform: translateY(-50px);
+    transition: all .2s ease-in-out;
 }
 .circle {
   position: absolute;
@@ -208,6 +226,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  transition: all .2s ease-in-out;
 }
 .blue {
   background-image: url("../img/circle-blue.png");
@@ -220,6 +239,7 @@ body {
   background-image: url("../img/circle-red.png");
   transform: translateX(192px);
 }
+
 
 @media (max-width: 1550px) {
   .wrapper {
