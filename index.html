@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="“robots”" content="“index,follow”" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#6C6C6C" />
     <!-- Manifest -->
     <link rel="manifest" href="./manifest.json" />
     <!-- Apple Icon -->
@@ -21,6 +23,7 @@
 
     <!-- Title -->
     <title>Eternum</title>
+    <meta name="description" content="Minecraft server community" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -34,7 +37,13 @@
             <div class="logo-img"></div>
             <div class="logo-text">ETERNUM</div>
           </div>
-          <div class="discord-icon"></div>
+          <a
+            aria-label="Discord"
+            target="_blank
+          "
+            href="https://discord.gg/GhVGKxz9Jj"
+            class="discord-icon"
+          ></a>
         </header>
         <div class="fuulscreen">
           <section class="body">
@@ -54,7 +63,13 @@
                   и даже серверу. У нас нет рекламы, мы не сервер, а сообщество
                   дружелюбных и сплоченных серверов.
                 </div>
-                <a href="#" class="info-btn">Join</a>
+                <a
+                  target="_blank
+                "
+                  href="https://discord.gg/GhVGKxz9Jj"
+                  class="info-btn"
+                  >Join</a
+                >
               </div>
               <div class="info-footer">ETERNUM</div>
             </div>
@@ -62,6 +77,18 @@
         </div>
       </div>
     </div>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("./serviceworker.js")
+            .then((reg) => console.log("Success: ", reg.scope))
+            .catch((err) => console.log("Failure: ", err));
+        });
+      }
+    </script>
+
     <script src="/js/main.js"></script>
   </body>
 </html>
