@@ -62,7 +62,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url("../img/circle-1.png");
+  background-image: url("../img/circle-1.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -73,7 +73,7 @@ body {
   position: absolute;
   right: 0;
   bottom: 0;
-  background-image: url("../img/circle-2.png");
+  background-image: url("../img/circle-2.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -238,14 +238,14 @@ body {
   transition: all 0.2s ease-in-out;
 }
 .blue {
-  background-image: url("../img/circle-blue.png");
+  background-image: url("../img/circle-blue.svg");
 }
 .yellow {
-  background-image: url("../img/circle-yellow.png");
+  background-image: url("../img/circle-yellow.svg");
   transform: translateX(96px);
 }
 .red {
-  background-image: url("../img/circle-red.png");
+  background-image: url("../img/circle-red.svg");
   transform: translateX(192px);
 }
 
