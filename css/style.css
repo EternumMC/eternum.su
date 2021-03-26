@@ -44,7 +44,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 50px;
   box-sizing: border-box;
 }
 .root::after {
@@ -109,7 +108,7 @@ body {
   display: flex;
   align-items: center;
   letter-spacing: 0.185em;
-  font-family: FS Meridian;
+  font-family: 'FSMeridian-Bold', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -163,12 +162,12 @@ body {
 .info-footer {
   text-orientation: mixed;
   writing-mode: vertical-lr;
-  font-family: FS Meridian;
+  font-family: 'FSMeridian-Bold', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 72px;
   letter-spacing: 0.185em;
-  transform: translateY(-5px);
+  transform: translate(8px, -5px);
 }
 .info-title {
   font-family: "Century-Gothic";
@@ -249,15 +248,16 @@ body {
   background-image: url("../img/circle-red.png");
   transform: translateX(192px);
 }
-.info-footer {
-  transform: translateX(9px);
-}
-
 
 @media (max-width: 1550px) {
   .wrapper {
     padding: 0 20px;
     box-sizing: border-box;
+  }
+}
+@media (max-height: 620px) {
+  .root {
+    padding-bottom: 50px;
   }
 }
 @media (max-width: 1200px) {
